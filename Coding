@@ -1,0 +1,26 @@
+import java.math.BigInteger;
+import java.util.*;
+public class TakingInput {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int m1,m2,m3,m4,m5;
+        int total;
+        int min;
+        System.out.println("6 subj marks");
+        m1=sc.nextInt();
+        m2=sc.nextInt();
+        m3=sc.nextInt();
+        m4=sc.nextInt();
+        m5=sc.nextInt();
+        min=m1;
+        if(m2<min)min=m2;
+        if(m3<min)min=m3;
+        if(m4<min)min=m4;
+        if(m5<min)min=m5;
+total=m1+m2+m3+m4+m5;
+total=total-min;
+double percentage=total/4;
+        System.out.println("lowest"+min);
+        System.out.println("overall percentage:"+percentage);
+    }
+}
