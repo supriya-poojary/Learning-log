@@ -1,15 +1,34 @@
+//Methods
 public class Methods{
-
     static void print2katable() {
         for (int i = 1; i <= 10; i++) {
             int ans = 2 * i;
             System.out.println("->: " + ans);
         }
     }
-
     public static void main(String[] args) {
         System.out.println("Hi");
         print2katable();
         System.out.println("Bye");
     }
 }
+
+
+
+
+//Methods With Parameters
+public class Methods{
+    static void print2katable() {
+        for (int i = 1; i <= 10; i++) {
+            int ans = 2 * i;
+            System.out.println("->: " + ans);
+        }
+    }
+static void PrintSum(int x,int y){
+    System.out.println("sum:"+ (x+y) );
+}
+    public static void main(String[] args) {
+        PrintSum(5,10);
+    }
+}
+
